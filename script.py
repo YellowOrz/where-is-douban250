@@ -8,7 +8,7 @@ DOWNLOAD_URL = 'https://movie.douban.com/top250'
 
 def download_page(url):
     return requests.get(url, headers={
-        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+        'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.63 Safari/537.36 Edg/102.0.1245.33'
     }).text
 
 
